@@ -6,33 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculdora andres</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"
-    <link href="index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="index.css">  
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" /> 
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
 </head>
 <body>
     <div class="container">
           <div class="calculadora">
               <div class="display">        
-                    <div id="Valor-anterior">111</div>
-                    <div id="Valor-actual">222</div>
+                    <div id="Valor-anterior"></div>
+                    <div id="Valor-actual"></div>
                 </div>
+                
                 <button class="Numero">7</button>
                 <button class="Numero">8</button>
                 <button class="Numero">9</button>
-                <button class="operador">&#247</button>
+                <button class="operador" value="dividir">&#247</button>
                 <button class="Numero">4</button>
                 <button class="Numero">5</button>
                 <button class="Numero">6</button>
-                <button class="operador">x</button>
+                <button class="operador"value="multiplicar">x</button>
                 <button class="Numero">1</button>
                 <button class="Numero">2</button>
                 <button class="Numero">3</button>
-                <button class="operador">-</button>
+                <button class="operador"value="restar">-</button>
                 <button class="Numero">0</button>
-                <button class="col-2">=</button>
-                <button class="operador">+</button>
+                <button class="col-2"value="igual">=</button>
+                <button class="operador" value="sumar">+</button>
+                <button class= "borrador"onclick="display.borrarTodo()">C</button>
           </div>
             
     </div>
